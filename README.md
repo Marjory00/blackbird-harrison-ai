@@ -1,7 +1,7 @@
 
-# Write input validation and unit & integration tests for React Application
+# Write input validation, unit & integration tests for React Application
 
-# Requirements Project
+## Requirements - Project
 In this task, you'll create input validation logic along with unit test.
 
 Input validation is one of the most common functionalities in the software engineering world. Inevitably, we use input validation everywhere, from username and password, postal address, person name, and many other inputs.
