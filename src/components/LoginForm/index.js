@@ -44,6 +44,10 @@ export default function LoginForm() {
 
     return (emailValidateResult && !pwdValidateError)
     }
+
+    const handleSubmit = (event) => {
+      
+    }
       }
     
 
