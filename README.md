@@ -1,6 +1,9 @@
 
 # Write input validation, unit & integration tests for React Application
 
+## NOTE:
+ This project is part of the Software Engineering virtual training program with Blackbird thru Forage.
+
 ## Requirements - Project
 In this task, you'll create input validation logic along with unit test.
 
@@ -29,7 +32,6 @@ For the error message, you can use error state from text-fields Material UI comp
 Validation logic needs to be unit tested. You can use jest for unit testing https://jestjs.io/
 
 
-### This project is part of the Software Engineering virtual training program with Blackbird thru Forage.
 
 
 # To run on local development
