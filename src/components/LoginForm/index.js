@@ -43,25 +43,21 @@ export default function LoginForm() {
     }
 
     return (emailValidateResult && !pwdValidateError)
+
     }
 
     const handleSubmit = (event) => {
-      
-    }
+      event.preventDefault();
+      const data = new FormData(event.currentTarget);
+      console.log({
+        email: data.get('email'),
+        password: data.get('password'),
+      });
+
+      if (validateForm(event)) {
+        setShowAlert("Login Succesful");
       }
-    
-
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    const data = new FormData(event.currentTarget);
-    console.log({
-      email: data.get('email'),
-      password: data.get('password'),
-    });
-    validateForm(event);
-    setShowAlert("Login Successful");
-  };
+    };
 
   return (
     <>
@@ -109,6 +105,9 @@ export default function LoginForm() {
           </Typography>
           <Box component="form" noValidate onSubmit={handleSubmit} sx={{ mt: 1 }}>
             <TextField
+            error={showErrorEmail}
+            helperText={showErrorEmail}
+
               margin="normal"
               required
               fullWidth
@@ -119,6 +118,8 @@ export default function LoginForm() {
               autoFocus
             />
             <TextField
+            error={showErrorPwd}
+            helperText={showErrorPwd}
               margin="normal"
               required
               fullWidth
